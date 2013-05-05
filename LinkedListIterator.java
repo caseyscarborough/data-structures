@@ -2,19 +2,18 @@ package com.caseyscarborough.linkedlist;
 
 /**
  * Holds the current position of a LinkedList object.
- * Written with help from Mark Allen Weiss at java-tips.org.
- * http://www.java-tips.org/java-se-tips/java.lang/linked-list-implementation-in-java.html
- * 
  * @author Casey Scarborough
+ * @version 1.0.1
+ * @since 2013-05-04
  * @see LinkedList
  */
 class LinkedListIterator {
 	/**
 	 * Constructor for the list iterator.
-	 * @param theNode any node in the list
+	 * @param n any node in the list
 	 */
-	LinkedListIterator(Node theNode) {
-		current = theNode;
+	LinkedListIterator(Node n) {
+		current = n;
 	} 
 
 	/**

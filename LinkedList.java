@@ -3,12 +3,16 @@ package com.caseyscarborough.linkedlist;
 /**
  * LinkedList class to implement the Node and LinkedListIterator
  * classes. It is implemented using a header node.
- * Written with help from Mark Allen Weiss at java-tips.org.
- * http://www.java-tips.org/java-se-tips/java.lang/linked-list-implementation-in-java.html
  * @author Casey Scarborough
+ * @version 1.0.1
+ * @since 2013-05-04
  * @see LinkedListIterator
  */
 public class LinkedList {
+	
+	/**
+	 * The beginning of the linked list.
+	 */
 	private Node header;
 	
 	/**
@@ -117,7 +121,7 @@ public class LinkedList {
 					LinkedList temp = (LinkedList)itr.retrieve();
 					System.out.print("List inside of list: ");
 					temp.printList();
-				} else {
+				} else { // If the item is not a list
 					System.out.print(itr.retrieve() + " ");
 				}
 			}
@@ -127,7 +131,7 @@ public class LinkedList {
 	
 	/**
 	 * A simple method to retrieve the size of a specified list.
-	 * @return size of the list as an int.
+	 * @return size of the list as an integer.
 	 */
 	public int listSize() {
 		LinkedListIterator itr;
