@@ -29,12 +29,17 @@ In the <code>Stack.java</code> file, you'll find the Stack class. The Stack clas
 
 It also includes a main method that instantiates a stack and performs operations on the stack. Refer to the included documentation as well for more in depth explanations of the code.
 
+Queue Implementation
+--------------------
+
+Like the previous data structures, the queue is located in its respective directory. The Queue class contains five public methods for the implementation. These are very similar to the methods for the Stack class, and consist of insert(), remove(), peek(), display(), and insertMultiple(). These perform the actions that you would think that they would. The main method is also included in this class with some example uses of the Queue class. The documentation is also included if anything is unclear in the code.
+
 To Do
 -----
 
-- [x] Linked Lists
-- [&nbsp;] Binary Trees
-- [x] Stacks
-- [&nbsp;] Queues
-- [&nbsp;] Vectors / ArrayLists
-- [&nbsp;] Hash Tables
+- [x] Linked List
+- [&nbsp;&nbsp;] Binary Tree
+- [x] Stack
+- [x] Queue
+- [&nbsp;&nbsp;] Vector / ArrayList
+- [&nbsp;&nbsp;] Hash Table
