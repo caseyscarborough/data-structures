@@ -47,7 +47,7 @@ It also includes a main method that instantiates a stack and performs operations
 Queue Implementation
 --------------------
 
-Like the previous data structures, the queue is located in its respective directory. The Queue class contains five public methods for the implementation. These are very similar to the methods for the Stack class, and consist of insert(), remove(), peek(), display(), and insertMultiple(). These perform the actions that you would think that they would. The main method is also included in this class with some example uses of the Queue class. The documentation is also included if anything is unclear in the code.
+Like the previous data structures, the queue is located in its respective directory. The Queue class contains five public methods for the implementation. These are very similar to the methods for the Stack class, and consist of insert(), remove(), peek(), display(), and insertMultiple(). These perform the actions to insert, remove, view the first item in the queue, display the queue, and insert multiple items at once, respectively. The main method is also included in this class with some example uses of the Queue class. The documentation is also included if anything is unclear in the code.
 
 
 To Do
