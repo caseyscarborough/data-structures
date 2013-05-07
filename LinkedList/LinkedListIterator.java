@@ -1,11 +1,9 @@
-package com.caseyscarborough.linkedlist;
-
 /**
  * Holds the current position of a LinkedList object.
  * @author Casey Scarborough
  * @version 1.0.1
  * @since 2013-05-04
- * @see LinkedList
+ * @see LinkedList, Node
  */
 class LinkedListIterator {
 	/**
@@ -42,22 +40,4 @@ class LinkedListIterator {
 	}
 
 	Node current;
-}
-
-/**
- * Simple structure of a node to be stored in a LinkedList.
- * @author Casey Scarborough
- */
-class Node {
-	public Object data;
-	public Node next;
-	
-	public Node(Object d) {
-		this(d, null);
-	}
-
-	public Node(Object d, Node n) {
-		this.data = d;
-		this.next = n;
-	}
 }

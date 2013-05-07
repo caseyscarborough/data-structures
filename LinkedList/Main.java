@@ -1,5 +1,3 @@
-package com.caseyscarborough.linkedlist;
-import com.caseyscarborough.linkedlist.LinkedList;
 import java.util.Random;
 
 /**

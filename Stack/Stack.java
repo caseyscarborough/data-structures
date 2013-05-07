@@ -1,5 +1,3 @@
-package com.caseyscarborough.stack;
-
 import java.util.Arrays;
 
 /**

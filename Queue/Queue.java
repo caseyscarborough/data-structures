@@ -1,5 +1,3 @@
-package com.caseyscarborough.queue;
-
 /**
  * Implementation of a Queue, a first-in-first-out data structure.
  * @author Casey Scarborough

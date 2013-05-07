@@ -1,12 +1,10 @@
-package com.caseyscarborough.linkedlist;
-
 /**
  * LinkedList class to implement the Node and LinkedListIterator
  * classes. It is implemented using a header node.
  * @author Casey Scarborough
  * @version 1.0.1
  * @since 2013-05-04
- * @see LinkedListIterator
+ * @see LinkedListIterator, Node
  */
 public class LinkedList {
 	
