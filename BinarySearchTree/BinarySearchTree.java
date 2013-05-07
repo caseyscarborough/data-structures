@@ -1,15 +1,28 @@
-package com.caseyscarborough.bst;
-
-
+/**
+ * Class to implement a binary search tree containing
+ * insert, find, remove, and traverse functionality.
+ * @author Casey Scarborough
+ * @version 1.0.1
+ * @since 05-06-13
+ */
 public class BinarySearchTree {
+	/**
+	 * Node instance to hold the root of the tree.
+	 */
 	Node root;
 	
-	public void addNode(int key, String name) {
-		Node newNode = new Node(key, name);
+	/**
+	 * Used to add new nodes into the tree.
+	 * @param key the key to be added to the tree
+	 * @param value the name (or value) of the key
+	 */
+	public void addNode(int key, String value) {
+		Node newNode = new Node(key, value);
 		
 		if(root == null) { 
 			// If there is no root, create one
 			root = newNode;
+			System.out.println("Inserted key " + newNode.key + " as the root."); 
 		} else { // If root exists, traverse the tree
 			// Create a focus node for checking
 			Node focusNode = root;
@@ -23,22 +36,28 @@ public class BinarySearchTree {
 					focusNode = focusNode.leftChild;
 					if (focusNode == null) { // If it is, then create the new node in the tree
 						parent.leftChild = newNode;
+						System.out.println("Inserted key " + newNode.key); 
 						return;
 					} // If not, repeat the loop
 				} else if (key > focusNode.key){ // If the key is greater, move right
 					focusNode = focusNode.rightChild;
 					if (focusNode == null) { // If no node exists in that location, create it
 						parent.rightChild = newNode;
+						System.out.println("Inserted key " + newNode.key); 
 						return;
 					}
 				} else {
-					System.out.println("Duplicate entry not added.");
+					System.out.println("Could not insert duplicate entry.");
 					return;
 				}
 			}
 		}
 	}
 	
+	/**
+	 * Performs and outputs an in-order traversal on the tree.
+	 * @param focusNode the specified node to perform the search from.
+	 */
 	public void inOrderTraversal(Node focusNode) {
 		if(focusNode != null) {
 			inOrderTraversal(focusNode.leftChild);
@@ -47,6 +66,10 @@ public class BinarySearchTree {
 		}
 	}
 	
+	/**
+	 * Performs and outputs a pre-order traversal on the tree.
+	 * @param focusNode the specified node to perform the search from.
+	 */
 	public void preOrderTraversal(Node focusNode) {
 		if(focusNode != null) {
 			System.out.print(focusNode + " ");
@@ -55,6 +78,10 @@ public class BinarySearchTree {
 		}
 	}
 	
+	/**
+	 * Performs and outputs a post-order traversal on the tree.
+	 * @param focusNode the specified node to perform the search from.
+	 */
 	public void postOrderTraversal(Node focusNode) {
 		if(focusNode != null) {
 			postOrderTraversal(focusNode.leftChild);
@@ -62,7 +89,11 @@ public class BinarySearchTree {
 			System.out.print(focusNode + " ");
 		}
 	}
-
+	
+	/**
+	 * Performs and outputs a reverse in-order traversal on the tree.
+	 * @param focusNode the specified node to perform the search from.
+	 */
 	public void reverseInOrderTraversal(Node focusNode) {
 		if(focusNode != null) {
 			reverseInOrderTraversal(focusNode.rightChild);
@@ -71,6 +102,11 @@ public class BinarySearchTree {
 		}
 	}
 	
+	/**
+	 * Removes a specified node from the tree
+	 * @param key the key of the node to be removed.
+	 * @return true if the node was removed, false if it was not found.
+	 */
 	public boolean remove(int key) {
 		Node focusNode = root;
 		Node parent = root;
@@ -146,8 +182,13 @@ public class BinarySearchTree {
 		return true;
 	}
 	
+	/**
+	 * Used in the remove method to determine the replacement 
+	 * node when the node to be removed has two children.
+	 * @param replacedNode the node to be replaced.
+	 * @return the replacement node.
+	 */
 	private Node getReplacementNode(Node replacedNode) {
-		// 10:00
 		
 		Node replacementParent = replacedNode;
 		Node replacement = replacedNode;
@@ -168,6 +209,11 @@ public class BinarySearchTree {
 		return replacement;
 	}
 	
+	/**
+	 * Method used to find a specified node in the tree.
+	 * @param key the specified node to search for.
+	 * @return the node if it is found, or null if it isn't.
+	 */
 	public Node findNode(int key) {
 		Node focusNode = root;
 		
@@ -198,7 +244,7 @@ public class BinarySearchTree {
 		bst.addNode(6, "6");
 		bst.addNode(7, "7");
 		bst.addNode(8, "8");
-		System.out.println("Starting in-order traversal...");
+		System.out.println("\nStarting in-order traversal...");
 		bst.inOrderTraversal(bst.root);
 		
 		System.out.println("\n\nStarting pre-order traversal...");
@@ -220,16 +266,23 @@ public class BinarySearchTree {
 
 }
 
+/**
+ * Class containing the structure for the nodes
+ * to be held in the Binary Search Tree.
+ * @author Casey Scarborough
+ * @since 05-06-2013
+ */
 class Node {
+	
 	int key;
-	String name;
+	String value;
 	
 	Node leftChild;
 	Node rightChild;
 	
-	Node(int key, String name) {
+	Node(int key, String value) {
 		this.key = key;
-		this.name = name;
+		this.value = value;
 	}
 	
 	public String toString() {
