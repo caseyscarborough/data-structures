@@ -6,13 +6,28 @@ I've created this repository to practice common data structures using Java. I wi
 Linked List Implementation
 --------------------------
 
-The linked list implementation is located in the LinkedList directory and contains three files, <code>LinkedList.java</code>, <code>LinkedListIterator.java</code>, and <code>Main.java</code>, along with the accompanying documentation.
+The linked list implementation is located in the LinkedList directory and contains three relevant classes, along with the accompanying documentation.
 
-The <code>LinkedListIterator.java</code> file contains two classes, LinkedListIterator and Node. The Node class contains the structure for the nodes in the linked list, while the LinkedListIterator class handles keeping track of the current node being operated on in a List.
+The first two classes are LinkedListIterator and Node. The Node class contains the structure for the nodes in the linked list, while the LinkedListIterator class handles keeping track of the current node being operated on in a List.
 
-The <code>LinkedList.java</code> file contains the LinkedList class, and contains the data needed for the linked list as well as the operations to be performed on the list, such as inserting, deleting, searching, and printing out the list.
+The LinkedList class contains the data and structure needed for the linked list as well as the operations to be performed on the list, such as inserting, deleting, searching, and printing out the list.
 
 The <code>Main.java</code> file is the main driver for the application, and gives some example usage of the classes. It shows inserting, deleting, searching, and printing from the lists, including inserting a list into another list and retrieving the data.
+
+Binary Search Tree Implementation
+---------------------------------
+
+The binary search tree is a little more complex than the others in this list, but has several advantages as well. It performs sorting, searching, and traversing the structure in a very efficient manner.
+
+The implementation contains two classes, Node and BinarySearchTree. Similar to the linked list, the Node class contains the structure to be used for each Node in the Binary Tree. This consists of the data, a pointer to the left child, and a pointer to the right child.
+
+The BinarySearchTree class contains the operations and data needed for a tree to be built and operated on. It contains the root, which is set for the first insert, and can from there be built. It contains methods for adding a node to the tree, removing a node, finding a node and traversing the node. The following depth-first traversals are implemented in the <code>BinarySearchTree.java</code> file:
+- In-Order Traversal
+- Pre-Order Traversal
+- Post-Order Traversal
+- Reverse In-Order Traversal
+
+You can read more about the different binary search tree traversals [here](http://en.wikipedia.org/wiki/Tree_traversal#Depth-first). For more information about the supplied implementation, please refer to the given documentation.
 
 Stack Implementation
 --------------------
@@ -34,11 +49,12 @@ Queue Implementation
 
 Like the previous data structures, the queue is located in its respective directory. The Queue class contains five public methods for the implementation. These are very similar to the methods for the Stack class, and consist of insert(), remove(), peek(), display(), and insertMultiple(). These perform the actions that you would think that they would. The main method is also included in this class with some example uses of the Queue class. The documentation is also included if anything is unclear in the code.
 
+
 To Do
 -----
 
 - [x] Linked List
-- [&nbsp;&nbsp;] Binary Tree
+- [x] Binary Search Tree
 - [x] Stack
 - [x] Queue
 - [&nbsp;&nbsp;] Vector / ArrayList
