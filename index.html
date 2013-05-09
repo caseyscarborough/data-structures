@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Data Structures in Java by caseyscarborough</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/caseyscarborough/data-structures-java">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/caseyscarborough/data-structures-java/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/caseyscarborough/data-structures-java/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Data Structures in Java</h1>
+          <p>Repository containing practice and implementation of common data structures in Java.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/caseyscarborough">caseyscarborough</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>Data Structures in Java</h1>
+
+<p>I've created this repository to practice common data structures using Java. I will be implementing each of them, including linked lists, stacks, queues, binary trees, and hash tables.</p>
+
+<h2>Linked List Implementation</h2>
+
+<p>The linked list implementation is located in the LinkedList directory and contains three relevant classes, along with the accompanying documentation.</p>
+
+<p>The first two classes are LinkedListIterator and Node. The Node class contains the structure for the nodes in the linked list, while the LinkedListIterator class handles keeping track of the current node being operated on in a List.</p>
+
+<p>The LinkedList class contains the data and structure needed for the linked list as well as the operations to be performed on the list, such as inserting, deleting, searching, and printing out the list.</p>
+
+<p>The <code>Main.java</code> file is the main driver for the application, and gives some example usage of the classes. It shows inserting, deleting, searching, and printing from the lists, including inserting a list into another list and retrieving the data.</p>
+
+<h2>Binary Search Tree Implementation</h2>
+
+<p>The binary search tree is a little more complex than the others in this list, but has several advantages as well. It performs sorting, searching, and traversing the structure in a very efficient manner.</p>
+
+<p>The implementation contains two classes, Node and BinarySearchTree. Similar to the linked list, the Node class contains the structure to be used for each Node in the Binary Tree. This consists of the data, a pointer to the left child, and a pointer to the right child.</p>
+
+<p>The BinarySearchTree class contains the operations and data needed for a tree to be built and operated on. It contains the root, which is set for the first insert, and can from there be built. It contains methods for adding a node to the tree, removing a node, finding a node and traversing the node. The following depth-first traversals are implemented in the <code>BinarySearchTree.java</code> file:</p>
+
+<ul>
+<li>In-Order Traversal</li>
+<li>Pre-Order Traversal</li>
+<li>Post-Order Traversal</li>
+<li>Reverse In-Order Traversal</li>
+</ul><p>You can read more about the different binary search tree traversals <a href="http://en.wikipedia.org/wiki/Tree_traversal#Depth-first">here</a>. For more information about the supplied implementation, please refer to the given documentation.</p>
+
+<h2>Stack Implementation</h2>
+
+<p>You'll find the stack implementation in the Stack directory. It is a single Java class that contains the functionality needed to create and operate on a stack.</p>
+
+<p>In the <code>Stack.java</code> file, you'll find the Stack class. The Stack class implements six main methods:</p>
+
+<ul>
+<li>Adding an item to the top of the stack: push()</li>
+<li>Removing the item on top of the stack: pop()</li>
+<li>Peeking at the top of the stack: top()</li>
+<li>Emptying the stack: empty()</li>
+<li>Displaying the stack: display()</li>
+<li>Adding multiple items at once: pushMultiple()</li>
+</ul><p>It also includes a main method that instantiates a stack and performs operations on the stack. Refer to the included documentation as well for more in depth explanations of the code.</p>
+
+<h2>Queue Implementation</h2>
+
+<p>Like the previous data structures, the queue is located in its respective directory. The Queue class contains five public methods for the implementation. These are very similar to the methods for the Stack class, and consist of insert(), remove(), peek(), display(), and insertMultiple(). These perform the actions to insert, remove, view the first item in the queue, display the queue, and insert multiple items at once, respectively. The main method is also included in this class with some example uses of the Queue class. The documentation is also included if anything is unclear in the code.</p>
+
+<h2>To Do</h2>
+
+<ul>
+<li>[x] Linked List</li>
+<li>[x] Binary Search Tree</li>
+<li>[x] Stack</li>
+<li>[x] Queue</li>
+<li>[  ] Vector / ArrayList</li>
+<li>[  ] Hash Table</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
